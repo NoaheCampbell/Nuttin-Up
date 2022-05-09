@@ -61,6 +61,8 @@ public class GameView extends JPanel implements KeyListener
             state.movePlayer("left");
         else if(keycode == KeyEvent.VK_D || keycode == KeyEvent.VK_RIGHT)
             state.movePlayer("right");
+        else if(keycode == KeyEvent.VK_SPACE)
+            state.playerShoot();
     }
 
     public void keyReleased(KeyEvent e) 

@@ -12,7 +12,7 @@ public class GameControl implements Runnable, ActionListener
     {
         state = new GameState();
         view = new GameView(state);
-        player = new Player(view, "squirrel.png");
+        player = new Player(view, "squirrel-facing-back.png", state);
 
         state.setPlayer(player);
 

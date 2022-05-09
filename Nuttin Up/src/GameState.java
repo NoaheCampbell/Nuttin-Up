@@ -57,4 +57,9 @@ public class GameState
         player.movePlayer(direction);
     }
 
+    public void playerShoot()
+    {
+        player.playerShoot();
+    }
+
 }
