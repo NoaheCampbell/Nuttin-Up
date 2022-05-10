@@ -1,0 +1,5 @@
+X: 691 Y: 655 direction: left
+X: 48 Y: 392 direction: right
+X: 35 Y: 76 direction: down
+X: 737 Y: 58 direction: left
+X: 759 Y: 106 direction: left

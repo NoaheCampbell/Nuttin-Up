@@ -3,9 +3,11 @@ import javax.swing.JFrame;
 import java.awt.Graphics;
 import java.awt.Dimension;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseListener;
 
-public class GameView extends JPanel implements KeyListener
+public class GameView extends JPanel implements KeyListener, MouseListener
 {
     private GameState state;
     private Dimension size;
@@ -32,6 +34,8 @@ public class GameView extends JPanel implements KeyListener
 
         addKeyListener(this);
         setFocusable(true);
+
+        addMouseListener(this);
     }
 
     public void paint(Graphics g)
@@ -43,7 +47,7 @@ public class GameView extends JPanel implements KeyListener
         {
             g.drawImage(ResourceLoader.getLoader().getImage(filename), x - (width/2), y - (height/2), width, height, null);
         }
-
+    
     public void keyTyped(KeyEvent e) 
     {
         
@@ -69,4 +73,34 @@ public class GameView extends JPanel implements KeyListener
     { 
         
     }
+
+    public void mouseClicked(MouseEvent e) 
+    {
+
+        
+    }
+
+    public void mousePressed(MouseEvent e) 
+    {
+        System.out.println("X: " + e.getX() + " Y: " + e.getY());
+    }
+
+    public void mouseReleased(MouseEvent e) 
+    {
+
+        
+    }
+
+    public void mouseEntered(MouseEvent e) 
+    {
+
+        
+    }
+
+    public void mouseExited(MouseEvent e) 
+    {
+
+        
+    }
+
 }
